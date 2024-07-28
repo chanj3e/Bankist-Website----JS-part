@@ -1,0 +1,186 @@
+/* Responsive styles for Bankist website */
+
+/* Base styles for smaller screens */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%; /* 9px */
+  }
+
+  .section {
+    padding: 10rem 3rem;
+  }
+
+  .section__title {
+    max-width: 65rem;
+  }
+
+  .features {
+    margin: 0 6rem;
+  }
+
+  .operations {
+    max-width: 90rem;
+  }
+
+  .slider {
+    max-width: 90rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+
+  .nav {
+    padding: 0 3rem;
+  }
+
+  .nav__item {
+    margin-left: 2rem;
+  }
+
+  .header__title {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .header__img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 60%;
+    justify-self: center;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin: 0 auto;
+    max-width: 50rem;
+  }
+
+  .operations__tab-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .operations__tab {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .operations__content {
+    padding: 2.5rem 3rem 6.5rem 3rem;
+  }
+
+  .testimonial {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .nav__logo {
+    margin-bottom: 2rem;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__item {
+    margin: 0.5rem 0;
+  }
+
+  .header {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .header__title {
+    gap: 1rem;
+  }
+
+  .header__img {
+    width: 80%;
+    transform: translateY(0);
+  }
+
+  .section {
+    padding: 7rem 2rem;
+  }
+
+  .section__title {
+    margin-bottom: 4rem;
+  }
+
+  .features__feature {
+    width: 100%;
+  }
+
+  .operations__content--active {
+    grid-template-columns: 1fr;
+  }
+
+  .operations__icon {
+    justify-self: center;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial {
+    width: 90%;
+  }
+
+  .testimonial__text {
+    font-size: 1.5rem;
+  }
+
+  .slider__btn {
+    display: none;
+  }
+
+  .dots {
+    bottom: 3%;
+  }
+
+  .section--sign-up {
+    padding: 7rem 2rem;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__item {
+    margin: 0.5rem 0;
+  }
+
+  .modal {
+    padding: 3rem;
+    max-width: 90%;
+  }
+
+  .modal__form {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .modal__form button {
+    grid-column: 1;
+  }
+}
+
+/* Adjust font sizes for very small screens */
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 43.75%; /* 7px */
+  }
+}
